@@ -1,0 +1,331 @@
+{
+  "meta": {
+    "model_path": "models_saved/isoforest_all_channels_with_scalers.joblib",
+    "model_sha256": "6953359865a95e08dbc9091bad321bc6ae4a78949e7bc1fc94627b27b57c4549",
+    "window_size": 120,
+    "stride": 10,
+    "generated_on": "2026-07-21",
+    "generated_with": {
+      "python": "3.12.3",
+      "numpy": "2.4.4",
+      "sklearn": "1.8.0",
+      "joblib": "1.5.3"
+    },
+    "score_tolerance": 1e-06,
+    "note": "Golden values for regression testing. The model artifact was pickled under scikit-learn 1.6.1 (see InconsistentVersionWarning raised on load in environments running a newer sklearn) but predict()/decision_function() are deterministic given a fitted estimator, so these values matched exactly across repeated loads and fresh processes when generated. If a future run produces a label flip or a score outside score_tolerance, treat it as a reproducibility regression -- see Known Limitations in MODEL_CARD.md."
+  },
+  "cases": {
+    "P-1_offset0": {
+      "ch_id": "P-1",
+      "offset": 0,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "bc315d15c0ae1f7323ddf06ba5a4f67c6576e0c3a3dd533ebd28a5b6632198ba",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.1511379000004489
+    },
+    "P-1_offset2835": {
+      "ch_id": "P-1",
+      "offset": 2835,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "f9ec24357bea34844876b91f733c383cba0c1b61cbda9e0e191f2c9edb65a875",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.10221695615599369
+    },
+    "P-1_offset5670": {
+      "ch_id": "P-1",
+      "offset": 5670,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "bfd0429a708aaec194d24ff4bb899bc93aebfeb02cf27ad9b9ce8bfea97ddcdd",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.13794444285905444
+    },
+    "E-1_offset0": {
+      "ch_id": "E-1",
+      "offset": 0,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "0f99552e5ad081f2de95b35fe1dc821498299d741b5ef88d205de7cbd81a072c",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.18863746848456092
+    },
+    "E-1_offset2838": {
+      "ch_id": "E-1",
+      "offset": 2838,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "c28067721c0295b4cd0194e8b2cc251aa080ed9a6f2baff3a671cf0937f76fe1",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.15999449628973528
+    },
+    "E-1_offset5677": {
+      "ch_id": "E-1",
+      "offset": 5677,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "8e5c1531c943348b3dad9e5cce44a584e027bd22bc67e63c11bdbfbb730f9a0e",
+      "expected_label": -1,
+      "expected_is_anomaly": true,
+      "expected_score": -0.16244695709345336
+    },
+    "A-1_offset0": {
+      "ch_id": "A-1",
+      "offset": 0,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "e6563bffa50358e9c0e8b9ff26dcb0ea98ad8d562b0dc01320f170286cd6ed57",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.06570695853980912
+    },
+    "A-1_offset2880": {
+      "ch_id": "A-1",
+      "offset": 2880,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "4a88dc2c1c0e219035fd5c90fad922b6ff042193817db7aa659631c6d86d9880",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.10801580858139825
+    },
+    "A-1_offset5760": {
+      "ch_id": "A-1",
+      "offset": 5760,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "efe658b307a1cbb5090e43699f9dd91016696cf65cebbeac1787d028a5c83825",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.039585745786740456
+    },
+    "T-1_offset0": {
+      "ch_id": "T-1",
+      "offset": 0,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "d90c73a05d5c6a4db8e29cd6c0c2bb33003f6674bf0b6a737ff8020918b464bf",
+      "expected_label": -1,
+      "expected_is_anomaly": true,
+      "expected_score": -0.2370632155426874
+    },
+    "T-1_offset2870": {
+      "ch_id": "T-1",
+      "offset": 2870,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "52d80773d0a393b6f1d5242dcdc32a2ecd02b1526d3849bbcda135a46e0cfbbb",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.05250188531607558
+    },
+    "T-1_offset5741": {
+      "ch_id": "T-1",
+      "offset": 5741,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "c74a6c87f68570c7e00040baaf6a163dae3ff6fff5d748a44d4288a155a3a69a",
+      "expected_label": -1,
+      "expected_is_anomaly": true,
+      "expected_score": -0.007249944046670009
+    },
+    "G-1_offset0": {
+      "ch_id": "G-1",
+      "offset": 0,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "83fac3c41aff37b1ad1d6d09c058a7a0fa7a863850643bf87e503c28c72926e2",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.10028498683863163
+    },
+    "G-1_offset2823": {
+      "ch_id": "G-1",
+      "offset": 2823,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "68f6428dbef7ac793bbac9ffdefeac497827c7feda2fb882449192fe6c8eb003",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.11900023699821921
+    },
+    "G-1_offset5646": {
+      "ch_id": "G-1",
+      "offset": 5646,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "07ca6323e0cc7365f172c7021b1b29a25253848dd993505a6dc68f76b5c90205",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.1830027534296878
+    },
+    "M-6_offset0": {
+      "ch_id": "M-6",
+      "offset": 0,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        55
+      ],
+      "raw_window_sha256": "230d7ee23108c7b80a253838afeb5990da4fa30663bf7820612759dc4832f5e2",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.04890332681849757
+    },
+    "M-6_offset683": {
+      "ch_id": "M-6",
+      "offset": 683,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        55
+      ],
+      "raw_window_sha256": "60c24fa8b8eacba08b42fa92d4979563bc47e0b2658fa3a98aa418a415a59723",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.04034594148600873
+    },
+    "M-6_offset1366": {
+      "ch_id": "M-6",
+      "offset": 1366,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        55
+      ],
+      "raw_window_sha256": "b359a09eeb746b5eed0cf3dec636225c278063e666d929f7ab5f8226c6d6eca1",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.07828662363902777
+    },
+    "C-1_offset0": {
+      "ch_id": "C-1",
+      "offset": 0,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        55
+      ],
+      "raw_window_sha256": "329fac57647f11376e8c8ab94cfd8154fd08208b38b2a0c215ae5a8136f75a8c",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.05950328594843757
+    },
+    "C-1_offset754": {
+      "ch_id": "C-1",
+      "offset": 754,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        55
+      ],
+      "raw_window_sha256": "a6495007050cad484134bbdce61e325dc37e2cc21c87d3d0636784556773960e",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.12713889969309738
+    },
+    "C-1_offset1509": {
+      "ch_id": "C-1",
+      "offset": 1509,
+      "synthetic": null,
+      "window_shape": [
+        120,
+        55
+      ],
+      "raw_window_sha256": "e65a0ebb1c4bc1d5043ae9f63c62353af4e2399053ccc4482ee375aa8f46b1c8",
+      "expected_label": 1,
+      "expected_is_anomaly": false,
+      "expected_score": 0.14136402581299756
+    },
+    "P-1_synthetic_zeros": {
+      "ch_id": "P-1",
+      "offset": null,
+      "synthetic": "zeros",
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "151ff79f29e96d211576b9a2e3e78f518b26109916616945d50cdee82dd2ba8b",
+      "expected_label": -1,
+      "expected_is_anomaly": true,
+      "expected_score": -0.16101739267734594
+    },
+    "P-1_synthetic_ones": {
+      "ch_id": "P-1",
+      "offset": null,
+      "synthetic": "ones",
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "bf92e28edd3af5c14ac29cbcd4313b3c9ffa9e35e4038e377d994d62467617ed",
+      "expected_label": -1,
+      "expected_is_anomaly": true,
+      "expected_score": -0.1413506427658583
+    },
+    "P-1_synthetic_constant_5": {
+      "ch_id": "P-1",
+      "offset": null,
+      "synthetic": "constant_5",
+      "window_shape": [
+        120,
+        25
+      ],
+      "raw_window_sha256": "1850a2f298ed02887c085eaa84acb11fc9cdf6af66495ee7ce5d4d1ef7c7d19c",
+      "expected_label": -1,
+      "expected_is_anomaly": true,
+      "expected_score": -0.1413506427658583
+    }
+  }
+}

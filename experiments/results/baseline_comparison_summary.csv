@@ -1,0 +1,3 @@
+model,precision,recall,f1,channels_modeled,channels_skipped,wall_clock_seconds
+Isolation Forest,0.22370919864779823,0.6208116963402571,0.3288995877394448,82,0,10.2
+Local Outlier Factor,0.2291807515211643,0.8854012116716122,0.3641130428979557,82,0,4.9
